@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paraphrasing tool</title>
+</head>
+<body>
+<form action='/perform_Paraphrasing' method='post'>
+    <label>Type your Text here</label><br>
+    <textarea name="paraphrasing_text"></textarea><br>
+    <input type="submit" value="perform paraphrasing">
+</form>
+
+{% if response %}
+    <p>{{ response }}</p>
+{% endif %}
+
+</body>
+</html>
